@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0D22DC3425C4E45800602D8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D22DC3325C4E45800602D8A /* Preview Assets.xcassets */; };
 		0D22DC3F25C4E45800602D8A /* SwiftZXingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22DC3E25C4E45800602D8A /* SwiftZXingTests.swift */; };
 		0D22DC4A25C4E45800602D8A /* SwiftZXingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22DC4925C4E45800602D8A /* SwiftZXingUITests.swift */; };
+		0D26530725C67CB300E32CF4 /* ZXingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26530625C67CB300E32CF4 /* ZXingViewModel.swift */; };
+		0D6C3AC225C5502500D5EF23 /* CALayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C3AC125C5502400D5EF23 /* CALayerView.swift */; };
+		FBD278A26878F37A6B06F187 /* Pods_SwiftZXing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE047A943558B2EAC10473 /* Pods_SwiftZXing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 		0D22DC4525C4E45800602D8A /* SwiftZXingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftZXingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D22DC4925C4E45800602D8A /* SwiftZXingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftZXingUITests.swift; sourceTree = "<group>"; };
 		0D22DC4B25C4E45800602D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D26530625C67CB300E32CF4 /* ZXingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXingViewModel.swift; sourceTree = "<group>"; };
+		0D6C3AC125C5502400D5EF23 /* CALayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerView.swift; sourceTree = "<group>"; };
+		16A9C3B8D3546A17BC6888AB /* Pods-SwiftZXing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftZXing.release.xcconfig"; path = "Target Support Files/Pods-SwiftZXing/Pods-SwiftZXing.release.xcconfig"; sourceTree = "<group>"; };
+		22DE047A943558B2EAC10473 /* Pods_SwiftZXing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftZXing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58451B5A1BB2B062B7D5374C /* Pods-SwiftZXing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftZXing.debug.xcconfig"; path = "Target Support Files/Pods-SwiftZXing/Pods-SwiftZXing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD278A26878F37A6B06F187 /* Pods_SwiftZXing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,8 @@
 				0D22DC3D25C4E45800602D8A /* SwiftZXingTests */,
 				0D22DC4825C4E45800602D8A /* SwiftZXingUITests */,
 				0D22DC2A25C4E45700602D8A /* Products */,
+				488A82E9849D2AC97D51E76B /* Pods */,
+				78F3C15F018E3B5BFD1CDEF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +111,8 @@
 				0D22DC3025C4E45800602D8A /* Assets.xcassets */,
 				0D22DC3525C4E45800602D8A /* Info.plist */,
 				0D22DC3225C4E45800602D8A /* Preview Content */,
+				0D6C3AC125C5502400D5EF23 /* CALayerView.swift */,
+				0D26530625C67CB300E32CF4 /* ZXingViewModel.swift */,
 			);
 			path = SwiftZXing;
 			sourceTree = "<group>";
@@ -130,6 +143,23 @@
 			path = SwiftZXingUITests;
 			sourceTree = "<group>";
 		};
+		488A82E9849D2AC97D51E76B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58451B5A1BB2B062B7D5374C /* Pods-SwiftZXing.debug.xcconfig */,
+				16A9C3B8D3546A17BC6888AB /* Pods-SwiftZXing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78F3C15F018E3B5BFD1CDEF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DE047A943558B2EAC10473 /* Pods_SwiftZXing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D22DC4E25C4E45800602D8A /* Build configuration list for PBXNativeTarget "SwiftZXing" */;
 			buildPhases = (
+				964C80BF22B3577E9B118553 /* [CP] Check Pods Manifest.lock */,
 				0D22DC2525C4E45700602D8A /* Sources */,
 				0D22DC2625C4E45700602D8A /* Frameworks */,
 				0D22DC2725C4E45700602D8A /* Resources */,
+				A91E92828236CAAB5BA1C0C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +286,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		964C80BF22B3577E9B118553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftZXing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91E92828236CAAB5BA1C0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftZXing/Pods-SwiftZXing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftZXing/Pods-SwiftZXing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftZXing/Pods-SwiftZXing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D22DC2525C4E45700602D8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D22DC2F25C4E45700602D8A /* ContentView.swift in Sources */,
+				0D6C3AC225C5502500D5EF23 /* CALayerView.swift in Sources */,
 				0D22DC2D25C4E45700602D8A /* SwiftZXingApp.swift in Sources */,
+				0D26530725C67CB300E32CF4 /* ZXingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +490,7 @@
 		};
 		0D22DC4F25C4E45800602D8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58451B5A1BB2B062B7D5374C /* Pods-SwiftZXing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +513,7 @@
 		};
 		0D22DC5025C4E45800602D8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A9C3B8D3546A17BC6888AB /* Pods-SwiftZXing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
